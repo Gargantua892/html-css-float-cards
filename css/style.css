@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
 }
 
-p{
+p, a{
     font-family: 'Fredoka', sans-serif;
     font-weight: 400;
     margin: 0px;
@@ -25,9 +29,13 @@ section{
 /* creazione stile card */
 .card{
 color: #fff;
-width: calc(100%/3);
+width: calc((100%/3) - 10px);
 background-color: #0e0e18;
 text-align: left;
+height: 100px;
+line-height: 100px;
+float: left;
+margin: 0px 5px;
 }
 
 .card h3{
@@ -47,5 +55,22 @@ text-align: left;
     clear: both;
 }
 
+.card a{
+    color: #47abd6;
+    text-decoration: none;
+}
+
+.info{
+    height: 100px;
+    line-height: 1.6;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 8px 0px;
+}
 /* fine creazione stile card */
 
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
