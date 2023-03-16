@@ -14,12 +14,16 @@ p, a{
 
 }
 .container{
-    width: 64%;
+    width: 80%;
     margin: 0 auto;
 }
 
 header, section:first-child{
     text-align: center;
+}
+
+header h1{
+    color: #e5316f;
 }
 
 section{
@@ -36,6 +40,10 @@ height: 100px;
 line-height: 100px;
 float: left;
 margin: 0px 5px;
+}
+
+.card p{
+    text-transform: capitalize;
 }
 
 .card h3{
